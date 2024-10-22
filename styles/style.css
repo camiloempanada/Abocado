@@ -1,0 +1,344 @@
+@font-face{
+    font-family: 'fontrubik';
+    src: url('/font/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fontpoppins';
+    src: url('/font/Poppins-Regular.ttf') format('truetype');
+}
+
+::-webkit-scrollbar{
+    background-color: #fafafa;
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    display: none;
+    background: #fc0000;
+    border-radius: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*font-family: 'fontpoppins', system-ui;*/
+    /*font-family: 'fontrubik', system-ui;*/
+    background-color: #FCA311;
+}
+
+.contenedor{
+    padding: 5rem;
+    margin: 9rem auto;
+    height: auto;
+    width: 80%;
+    background-color: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo{
+    width: 240px;
+    height: 240px;
+}
+
+.art h1{
+    font-size: 2.5rem;
+    font-family: 'fontrubik', system-ui;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.art p{
+    font-size: 1.2rem;
+    font-family: 'fontpoppins', system-ui;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    min-width: 200px;
+    padding: 8px;
+    border: solid 2px #FCA311;
+    border-radius: 50px;
+    color: #000;
+    background: transparent;
+    font-size: 16px;
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s;
+}
+.btn:hover{
+    transition: 0.2s;
+    background-color: #FCA311;
+    color: #FFF;
+}
+
+.content-btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*LOADER*/
+
+.loader{
+    margin: 40vh auto;
+    border: 10px solid #FCA311; 
+    border-top: 10px solid #FFF; 
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 0.60s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.contenedor-section{
+    display: none;
+}
+
+/*LOADER*/
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1034px) {
+    .contenedor{
+        margin: 5rem auto;
+    }
+    .art h1{
+        font-size: clamp(24px, 1vw, 100px);
+    }
+    .art p{
+        font-size: clamp(16px, 1vw, 100px);
+        text-align: justify;
+    }
+    .btn{
+        padding: 8px;
+        min-width: 180px;
+        font-size: clamp(14px, 1vw, 100px);
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .contenedor{
+        padding: 3rem;
+        margin: 7rem auto;
+    }
+    .art h1{
+        font-size: clamp(26px, 1vw, 100px);
+    }
+    .art p{
+        font-size: clamp(14px, 1vw, 100px);
+        text-align: justify;
+    }
+    .content-btn{
+        width: 100%;
+    }
+    .btn{
+        padding: 8px;
+        min-width: 150px;
+        font-size: clamp(12px, 1vw, 100px);
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        padding: 3rem;
+    }
+    .art h1{
+        font-size: clamp(24px, 1vw, 100px);
+    }
+    .art p{
+        font-size: clamp(12px, 1vw, 100px);
+        text-align: justify;
+    }
+    .btn{
+        padding: 8px;
+        min-width: 150px;
+        font-size: clamp(12px, 1vw, 100px);
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .contenedor{
+        padding: 3rem;
+        margin: 3rem auto;
+    }
+    .info{
+        padding: 0 0 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .art h1{
+        font-size: clamp(28px, 1vw, 100px);
+        text-align: center;
+    }
+    .art p{
+        font-size: clamp(14px, 1vw, 100px);
+        text-align: justify;
+    }
+    .content-btn{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn{
+        margin-top: 5px;
+        padding: 8px;
+        width: 100%;
+        font-size: clamp(12px, 1vw, 100px);
+    }
+    .content-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .contenedor{
+        padding: 2rem;
+        margin: 5rem auto;
+    }
+    .info{
+        padding: 0 0 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .art h1{
+        font-size: clamp(26px, 1vw, 100px);
+        text-align: center;
+    }
+    .art p{
+        font-size: clamp(14px, 1vw, 100px);
+        text-align: justify;
+    }
+    .content-btn{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn{
+        margin-top: 5px;
+        padding: 6px;
+        width: 100%;
+        font-size: clamp(12px, 1vw, 100px);
+    }
+    .content-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    .contenedor{
+        padding: 2rem;
+        margin: 5rem auto;
+    }
+    .info{
+        padding: 0 0 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .art h1{
+        font-size: clamp(24px, 1vw, 100px);
+        text-align: center;
+    }
+    .art p{
+        font-size: clamp(12px, 1vw, 100px);
+        text-align: justify;
+    }
+    .content-btn{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn{
+        margin-top: 5px;
+        padding: 5px;
+        width: 100%;
+        font-size: clamp(12px, 1vw, 100px);
+    }
+    .content-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .contenedor{
+        padding: 2rem;
+        margin: 5rem auto;
+    }
+    .info{
+        padding: 0 0 10px 0;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .art h1{
+        font-size: clamp(20px, 1vw, 100px);
+        text-align: center;
+    }
+    .art p{
+        font-size: clamp(10px, 1vw, 100px);
+        text-align: justify;
+    }
+    .content-btn{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn{
+        margin-top: 5px;
+        padding: 4px;
+        width: 100%;
+        font-size: clamp(10px, 1vw, 100px);
+    }
+    .content-logo{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/*RESPONSIVE*/

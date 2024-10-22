@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abocados - producto</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/style-section-card.css">
+    <!--ICON-->
+    <link rel="icon" href="images/logo.png">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/50e69d2706.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+    <!--SECTION - HEADER-->
+    <header class="header">
+        <div class="content-logo">
+            <h1 class="logo-nombre">Abocados</h1>
+            <img src="images/logo.png" class="logo-img" alt="">
+        </div>
+        <nav class="navegador"  id="navbarLink">
+            <a href="index-inicio.html" class="links">Inicio</a>
+            <a href="index-comida.html" class="links">Comida</a>
+            <a href="index-juego.html" class="links">Juegos</a>
+            <a href="index-encuesta.html" class="links">Encuesta</a>
+        </nav>
+        <!--BOX-CARRITO-->
+        <div id="cart" class="hidden">
+            <h2 class="cart-title"><strong>CARRITO</strong></h2>
+            <ul id="cart-items"></ul>
+            <br>
+            <button id="clear-cart"><strong>VACIAR</strong></button>
+        </div>
+        <div class="icon-navegacion">
+            <!--CARRITO HEADER-->
+            <svg class="navbar-car" id="toggle-cart" xmlns="http://www.w3.org/2000/svg" height="52" width="52" viewBox="0 0 576 512">
+                <path fill="#FFF" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+            </svg>
+            <!--BAR-->
+            <svg class="navbar-bar" id="navbarBar" xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                <path fill="#FFF" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </div>
+    </header>
+    <!--SECTION - HEADER-->
+
+    <section class="section-card-product">
+        <br><br>
+        <div class="contenedor">
+            <div class="product-card" id="card-container">
+                <div class="img-product">
+                    <figure id="img-container"></figure>
+                </div>
+                <main class="info-product">
+                    <h1 class="text-product" id="title"><strong></strong></h1>
+                    <h3 class="precio" id="price"><strong></strong></h3>
+                    <br>
+                    <p class="p-product" id="description"></p>
+                    <br>
+                    <select class="list">
+                        <option>Salsa de Tomate</option>
+                        <option>Salsa de Mayonesa</option>
+                        <option>Salsa de Rosada</option>
+                        <option>Salsa de Piña</option>
+                        <option>Salsa de Maíz Dulce</option>
+                        <option>Ninguna</option>
+                    </select>
+                    <br><br>
+                    <a href="index-pago.html" class="a-btn">
+                        <button class="btn"><strong>Comprar</strong></button>
+                    </a>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION - FOOTER-->
+    <section class="section7">
+        <footer class="footer">
+            <div class="contenedor-info">
+                <div class="info-1">
+                    <h3 class="texto-footer"><strong>Compromiso:</strong></h3>
+                    <p class="p-footer">
+                        En Urben Food, nos comprometemos a ofrecerte la mejor calidad en cada hamburguesa, utilizando ingredientes frescos y locales. Tu satisfacción es nuestra prioridad.
+                    </p>
+                    <br>
+                    <h3 class="texto-footer"><strong>Contacto:</strong></h3>
+                    <p class="p-footer">
+                        ¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte. Escríbenos a info@urbenfood.com o llámanos al (312) 356-7892. ¡Nos encantaría saber de ti!
+                    </p>
+                </div>
+                <div class="info-2">
+                    <br>
+                    <h3 class="texto-footer"><strong>Nosotros:</strong></h3>
+                    <p class="p-footer">
+                        Somos un restaurante dedicado a crear experiencias gastronómicas únicas en Caucasia. En Urben Food, combinamos sabor, frescura y pasión en cada plato que servimos.
+                    </p>
+                    <br>
+                    <h3 class="texto-footer"><strong>Redes:</strong></h3>
+                    <div class="content-icon">
+                        <a href="#" class="link-icon">
+                            <img src="images/X-icon.svg" class="icon-initial" alt="">
+                        </a>
+                        <a href="#" class="link-icon">
+                            <img src="images/instagran-icon.svg" class="icon" alt="">
+                        </a>
+                        <a href="#" class="link-icon">
+                            <img src="images/discord-icon.svg" class="icon" alt="">
+                        </a>
+                        <a href="#" class="link-icon">
+                            <img src="images/youtube-icon.svg" class="icon" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="info-3">
+                    <figure class="figure-3">
+                        <img src="images/logo.png" class="logo-footer" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="autor-footer">
+                <small>&copy; 2024 <b>Abocados</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </section>
+    <!--SECTION - FOOTER-->
+    
+    <script src="js/details.js"></script>
+    <script src="js/ingredientes.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/tel.js"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

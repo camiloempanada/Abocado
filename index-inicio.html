@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Abocados - inicio</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/style-inicio.css">
+    <!--ICON-->
+    <link rel="icon" href="images/logo.png">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/50e69d2706.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <!--SECTION - HEADER-->
+    <header class="header">
+        <div class="content-logo">
+            <h1 class="logo-nombre">Abocados</h1>
+            <img src="images/logo.png" class="logo-img" alt="">
+        </div>
+        <nav class="navegador"  id="navbarLink">
+            <a href="index-inicio.html" class="links">Inicio</a>
+            <a href="index-comida.html" class="links">Comida</a>
+            <a href="index-juego.html" class="links">Juegos</a>
+            <a href="index-encuesta.html" class="links">Encuesta</a>
+        </nav>
+        <!--BOX-CARRITO-->
+        <div id="cart" class="hidden">
+            <h2 class="cart-title"><strong>CARRITO</strong></h2>
+            <ul id="cart-items"></ul>
+            <br>
+            <button id="clear-cart"><strong>VACIAR</strong></button>
+        </div>
+        <div class="icon-navegacion">
+            <!--CARRITO HEADER-->
+            <svg class="navbar-car" id="toggle-cart" xmlns="http://www.w3.org/2000/svg" height="52" width="52" viewBox="0 0 576 512">
+                <path fill="#FFF" d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+            </svg>
+            <!--BAR-->
+            <svg class="navbar-bar" id="navbarBar" xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+                <path fill="#FFF" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </div>
+    </header>
+    <!--SECTION - HEADER-->
+
+    <!--SECTION - INFO1-->
+    <section class="section1">
+        <div class="contenedor1">
+            <main class="main1">
+                <h1 class="text"><strong>Las mejores hamburguesas de Abocados</strong></h1>
+                <p class="p">
+                    En Abocados, nos enorgullece ofrecerte las mejores hamburguesas 
+                    que puedas imaginar. Cada una de nuestras creaciones está elaborada 
+                    con ingredientes frescos y de la más alta calidad, combinando sabores 
+                    únicos que te sorprenderán desde el primer bocado.
+                </p>
+                <br>
+                <a href="index-info.html" class="a-btn">
+                    <button class="btn1"><strong>Más Información</strong></button>
+                </a>
+            </main>
+            <figure class="fig1">
+                <img src="images/info-food.png" class="image1" alt="">
+            </figure>
+        </div>
+    </section>
+    <!--SECTION - INFO1-->
+
+    <!--SECTION - INFO2-->
+    <section class="section2">
+        <h1 class="text2"><strong>BURGERS</strong></h1>
+        <div class="contenedor2">
+            <div class="content-card" id="card1">
+                <figure class="fig2">
+                    <img src="images/sweet.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>SWEET BACON</strong></h3>
+                    <p class="p-product">
+                        nuestra nueva burger llego para quedarse, con esta mezcla de queso philadelphia, y mermelada de tocineta que te encantara, carne de hamburguesa de 146 grs asada al carbon, queso cheddar, vegetales frescos, acompañadas por papas a la francesa, y nuestro pan de la casa horneado a diario.
+                    </p>
+                    <h3 class="precio"><strong>$29.000</strong></h3>
+                    <a href="producto-card.html?id=card1" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>
+            <div class="content-card" id="card2">
+                <figure class="fig2">
+                    <img src="images/triple.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>TRIPLE M</strong></h3>
+                    <p class="p-product">
+                        pan de la casa artesanal de elaboracion diaria, carne de 146 gramos artesanal, tartara de la casa, queso cheddar, queso philadelphia, pops de pechuga apanada, salsa BBQ de corozo, y papas a la francesa
+                    </p>
+                    <h3 class="precio"><strong>$27.000</strong></h3>
+                    <a href="producto-card.html?id=card2" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>
+            <div class="content-card">
+                <figure class="fig2">
+                    <img src="images/mediterranea.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>MEDITERRANEA</strong></h3>
+                    <p class="p-product">
+                        esta burger te asegura una nueva experiencia de sabores, pasta de tomate artesanal, queso parmesano, tajadas de salami, queso cheddar, albahaca fresca, carne de hamburguesa artesanal, nuestras deliciosas salsas de la casa y papas a la francesa.
+                    </p>
+                    <h3 class="precio"><strong>$24.500</strong></h3>
+                    <a href="index-section-card-3.html" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>
+            <div class="content-card">
+                <figure class="fig2">
+                    <img src="images/pinchadaP.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>PINCHADA PORK</strong></h3>
+                    <p class="p-product">       
+                        jugosa carne de res 146 gr al carbon, costillas de cerdo asasdas al carbon en salsa BBQ, queso mozzarella, pan de la casa, tocineta ahumada, lechuga, tomate, cebolla caramelizada, papas a la francesa, salsas de la casa.
+                    </p>
+                    <h3 class="precio"><strong>$27.000</strong></h3>
+                    <a href="index-section-card-4.html" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <h1 class="text2"><strong>BURGERS CON MUCHO POWER</strong></h1>
+        <div class="contenedor2">
+            <div class="content-card">
+                <figure class="fig2">
+                    <img src="images/mixta.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>MIXTA</strong></h3>
+                    <p class="p-product">                                                
+                        Pollo desmechado con salsa tartara, carne de res 146 gr, tocineta ahumada, aro de cebolla, queso mozzarella, tomate, lechuga, pan de la casa, papas a la francesa, salsas de la casa.
+                    </p>
+                    <h3 class="precio"><strong>$23.500</strong></h3>
+                    <a href="index-section-card-1.html" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>
+            <div class="content-card">
+                <figure class="fig2">
+                    <img src="images/polres.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>POLRES</strong></h3>
+                    <p class="p-product">
+                        Pan artesanal, carne de pollo de 110 gr,
+                        carne de res 146 gr, doble queso
+                        mozzarella, tocineta ahumada, cebolla caramelizada, tomate, lechuga, papas a la francesa, salsas de la casa.
+                    </p>
+                    <h3 class="precio"><strong>$25.000</strong></h3>
+                    <a href="index-section-card-2.html" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>      
+            <div class="content-card">
+                <figure class="fig2">
+                    <img src="images/mexicana.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>MEXICANA</strong></h3>
+                    <p class="p-product">
+                        Para los mantes de lo picante, Carne desmechada, carne de res de 146 gr, queso cheddar, guacamole de la casa, jalapeños, aji picante, cebolla cruda, papas a la francesa, salsas de la casa, pan de la casa.
+                    </p>
+                    <h3 class="precio"><strong>$24.500</strong></h3>
+                    <a href="index-section-card-1.html" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>
+            <div class="content-card">
+                <figure class="fig2">
+                    <img src="images/americana.png" class="image-product" alt="">
+                </figure>
+                <div class="info-card">
+                    <h3 class="text-product"><strong>AMERICANA</strong></h3>
+                    <p class="p-product">
+                        jugosa carne de res 146 gr al carbon, queso cheddar, pan de la casa sellado en mantequilla, aro de cebolla crocante, tocineta ahumada, pepinillos agridulces, lechuga, tomate, papas a la francesa, salsas de la casa.
+                    </p>
+                    <h3 class="precio"><strong>$23.500</strong></h3>
+                    <a href="index-section-card-2.html" class="a-btn">
+                        <button class="btn2"><strong>Comprar</strong></button>
+                    </a>
+                    <button class="btn-favorito"><strong>Favorito</strong></button>
+                </div>
+            </div>      
+        </div>
+    </section>
+    <!--SECTION - INFO2-->
+
+    <!--SECTION - INFO3-->
+    <section class="section3">
+        <h1 class="text2"><strong>No olvides ¡contactarnos!</strong></h1>
+        <div class="contenedor-contacto">
+            <form class="form">
+                <div class="input">
+                    <h2 class="text3"><strong>Contacto</strong></h2>
+                    <label for="Nombre:" class="lab"><strong>Nombre:</strong></label>
+                    <input type="text" name="Nombre:" class="inp" required>
+                    <br> 
+                    <label for="Teléfono:" class="lab"><strong>Teléfono:</strong></label>
+                    <input type="tel" name="Teléfono:" id="tel" class="inp" required>
+                    <br>
+                    <label for="Email:"class="lab"><strong>Email:</strong></label>
+                    <input type="email" name="Email:" class="inp" required>
+                    <br>
+                    <label for="Mensaje:"class="lab"><strong>Mensaje:</strong></label>
+                    <textarea name="Mensaje:" class="inp-text" required></textarea>
+                    <br>                    
+                    <a href="index2.html" class="btn3"><strong>ENVIAR</strong></a>
+                </div>
+            </form>
+            <main class="main2">
+                <h3 class="text4"><strong>1. Preguntas.</strong></h3>
+                <p class="p1">¿Tienes alguna pregunta? Completa este formulario y nos aseguraremos 
+                    de brindarte una respuesta clara y rápida.
+                </p>
+                <br>
+                <h3 class="text4"><strong>2. Interrupciones.</strong></h3>
+                <p class="p1">Si experimentaste alguna interrupción en la información, por favor, 
+                    indícalo en el formulario. Estamos aquí para resolver cualquier inconveniente.
+                </p>
+                <br>
+                <h3 class="text4"><strong>3. Más Información.</strong></h3>
+                <p class="p1">¿Necesitas más información? Rellena el formulario y te proporcionaremos 
+                    todos los detalles que necesitas lo antes posible.
+                </p>
+            </main>
+        </div>
+    </section>
+    <!--SECTION - INFO3-->
+
+    <!--SECTION - INFO4-->
+    <section class="section4">
+        <h1 class="text2"><strong>Nuestra Ubicación</strong></h1>
+        <div class="map">
+            <main class="main4">
+                <h3 class="text6"><strong>1. ACCESO.</strong></h3>
+                <p class="p3">
+                    Nuestro restaurante es de fácil acceso, ya sea que llegues en auto, 
+                    transporte público, o a pie. Contamos con estacionamiento gratuito 
+                    para nuestros clientes.
+                </p>
+                <br><br>
+                <h3 class="text6"><strong>2. UBICACIÓN.</strong></h3>
+                <p class="p3">
+                    Nos encontramos en Caucasia, Antioquia. Nuestro restaurante está ubicado 
+                    en la Calle 20 #15-45, en pleno centro de Caucasia.
+                </p>
+                <br><br>
+                <h3 class="text6"><strong>3. ENTORNO.</strong></h3>
+                <p class="p3">
+                    Estamos en una de las zonas más seguras y tranquilas del municipio, 
+                    ideal para compartir una comida con amigos o familiares.
+                </p>
+            </main>
+            <center>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7902.205268369912!2d-75.19737936635607!3d7.988336719245709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1723397078783!5m2!1ses-419!2sco" width="550" height="500" style="border:0; border-radius: 2px; margin-top: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </center>
+        </div>    
+    </section>
+    <!--SECTION - INFO4-->
+
+    <!--SECTION - INFO5-->
+    <section class="section5">
+        <h1 class="text2"><strong>Reseñas de nuestros Clientes</strong></h1>
+        <div class="contenedor-album">
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person.jpg" class="person" alt="">
+                        <h4 class="text5"><strong>Javier M.</strong></h4>
+                        <div class="box-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "Increíbles hamburguesas. El sabor es insuperable y se nota la frescura de los ingredientes. El ambiente del lugar es acogedor y el servicio es excelente. Definitivamente, un lugar que recomendaría a cualquiera."
+                        </p>
+                    </main>
+                </div>
+            </div>
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person2.jpeg" class="person" alt="">
+                        <h4 class="text5"><strong>Andrés P.</strong></h4>
+                        <div class="box-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "La mejor hamburguesa que he probado en mucho tiempo. El pan es suave, la carne perfectamente cocida, y los acompañamientos deliciosos. Urben Food es sin duda un must en Caucasia."
+                        </p>
+                    </main>
+                </div>
+            </div>
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person4.jpg" class="person" alt="">
+                        <h4 class="text5"><strong>Ricardo T.</strong></h4>
+                        <div class="box-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "Un lugar donde cada detalle cuenta. Desde la calidad de las hamburguesas hasta la atención al cliente, Urben Food lo tiene todo. Perfecto para una comida rápida pero deliciosa."
+                        </p>
+                    </main>
+                </div>
+            </div>
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person6.jpg" class="person" alt="">
+                        <h4 class="text5"><strong>Carolina G.</strong></h4>
+                        <div class="box-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "Urben Food se ha convertido en mi lugar favorito. Las hamburguesas son jugosas y llenas de sabor. El personal es siempre amable y atento. Me encanta la combinación de ingredientes frescos y únicos."
+                        </p>
+                    </main>
+                </div>
+            </div>
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person5.jpg" class="person" alt="">
+                        <h4 class="text5"><strong>Laura P.</strong></h4>
+                        <div class="box-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "Me encanta la variedad de hamburguesas que ofrecen en Urben Food. Siempre hay algo nuevo y delicioso para probar. Además, el ambiente es ideal para compartir con amigos. ¡Totalmente recomendado!"
+                        </p>
+                    </main>
+                </div>
+            </div>
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person3.jpg" class="person" alt="">
+                        <h4 class="text5"><strong>Daniel R.</strong></h4>
+                        <div class="box-star">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "Urben Food me sorprendió gratamente. Las hamburguesas son de otro nivel, con combinaciones que no encuentras en otros lugares. El ambiente también es genial. Sin duda, volveré pronto."
+                        </p>
+                    </main>
+                </div>
+            </div>
+            <div class="box-album">
+                <div class="album-img">
+                    <main class="main3">
+                        <img src="images/person7.jpg" class="person" alt="">
+                        <h4 class="text5"><strong>Mónica L.</strong></h4>
+                        <div class="box-star">
+                           <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                           <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                           <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                           <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                           <i class="fa-solid fa-star-half" style="color: #FFD43B;"></i>
+                        </div>
+                        <p class="p2">
+                            "Las hamburguesas de Urben Food son sencillamente espectaculares. Cada bocado es una explosión de sabor. Además, el lugar es muy acogedor y el servicio es impecable. Un 10 de 10."
+                        </p>
+                    </main>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <!--SECTION - INFO5-->
+
+    <!--SECTION - INFO6-->
+    <section class="section6">
+        <h1 class="text7"><strong>No te vallas sin ¡Conocernos!</strong></h1>
+        <div class="contenedor-nosotro">
+            <main class="main4">
+                <h2 class="text8"><strong>Sobre Nosotros</strong></h2>
+                <p class="p4">
+                    En Urben Food, somos más que un restaurante; somos un espacio 
+                    donde la pasión por la buena comida y la dedicación a nuestros 
+                    clientes se encuentran en cada detalle. Desde nuestros inicios, 
+                    hemos trabajado con un solo objetivo: crear experiencias gastronómicas 
+                    memorables con las mejores hamburguesas. Nuestro equipo está comprometido con la calidad, la frescura de los ingredientes y el sabor excepcional en cada plato que servimos.
+                </p>
+                <br>
+                <p class="p4">
+                    Nos enorgullece ser parte de la comunidad de Caucasia y agradecemos la 
+                    confianza que nuestros clientes nos brindan cada día. 
+                    Una buena hamburguesa debe ser: una combinación perfecta de sabor, frescura y dedicación.
+                </p>
+                <a href="index-info2.html" class="a-btn">
+                    <button class="btn4"><strong>Más sobre nosotros</strong></button>
+                </a>
+            </main>
+            <div class="contenedor-img">
+                <div class="box-img1">
+                    <figure class="fig3">
+                        <img src="images/image9.jpg" class="image2" alt="">
+                    </figure>
+                    <figure class="fig3">
+                        <img src="images/image7.jpg" class="image2" alt="">
+                    </figure>
+                </div>
+                <div class="box-img1">
+                    <figure class="fig3">
+                        <img src="images/image4.jpg" class="image2" alt="">
+                    </figure>
+                    <figure class="fig3">
+                        <img src="images/image5.jpg" class="image2" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION - INFO6-->
+
+    <!--SECTION - FOOTER-->
+    <section class="section7">
+        <footer class="footer">
+            <div class="contenedor-info">
+                <div class="info-1">
+                    <h3 class="texto-footer"><strong>Compromiso:</strong></h3>
+                    <p class="p-footer">
+                        En Urben Food, nos comprometemos a ofrecerte la mejor calidad en cada hamburguesa, utilizando ingredientes frescos y locales. Tu satisfacción es nuestra prioridad.
+                    </p>
+                    <br>
+                    <h3 class="texto-footer"><strong>Contacto:</strong></h3>
+                    <p class="p-footer">
+                        ¿Tienes alguna pregunta o sugerencia? Estamos aquí para ayudarte. Escríbenos a info@urbenfood.com o llámanos al (312) 356-7892. ¡Nos encantaría saber de ti!
+                    </p>
+                </div>
+                <div class="info-2">
+                    <br>
+                    <h3 class="texto-footer"><strong>Nosotros:</strong></h3>
+                    <p class="p-footer">
+                        Somos un restaurante dedicado a crear experiencias gastronómicas únicas en Caucasia. En Urben Food, combinamos sabor, frescura y pasión en cada plato que servimos.
+                    </p>
+                    <br>
+                    <h3 class="texto-footer"><strong>Redes:</strong></h3>
+                    <div class="content-icon">
+                        <a href="#" class="link-icon">
+                            <img src="images/X-icon.svg" class="icon-initial" alt="">
+                        </a>
+                        <a href="#" class="link-icon">
+                            <img src="images/instagran-icon.svg" class="icon" alt="">
+                        </a>
+                        <a href="#" class="link-icon">
+                            <img src="images/discord-icon.svg" class="icon" alt="">
+                        </a>
+                        <a href="#" class="link-icon">
+                            <img src="images/youtube-icon.svg" class="icon" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="info-3">
+                    <figure class="figure-3">
+                        <img src="images/logo.png" class="logo-footer" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="autor-footer">
+                <small>&copy; 2024 <b>Abocados</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </section>
+    <!--SECTION - FOOTER-->
+    
+    <script src="js/carrito.js"></script>
+    <script src="js/tel.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/producto.js"></script>
+</body>
+</html>
